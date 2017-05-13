@@ -9,7 +9,7 @@ NOSE_ARGS = [
   '--verbosity=2',                  # verbose output
   '--nologcapture',                 # don't output log capture
   '--with-coverage',                # activate coverage report
-  '--cover-package=todo',           # coverage reports will apply to these packages
+  '--cover-package=todoapp',        # coverage reports will apply to these packages
   '--with-spec',                    # spec style tests
   '--spec-color',
   '--with-xunit',                   # enable xunit plugin
