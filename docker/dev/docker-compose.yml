@@ -12,13 +12,29 @@ test:
     MYSQL_PASSWORD: password
     TEST_OUTPUT_DIR: /reports
 
-db: 
+#builder:
+#  build: ../../
+#  dockerfile: docker/dev/Dockerfile
+#  volumes_from:
+#    - cache
+#  entrypoint: "entrypoint.sh"
+#  command: ["pip", "wheel", "--no-index", "-f /build", "."]
+
+agent:
+  image: abhishekk/ansible
+  links:
+    - db
+  environment:
+    PROBE_HOST: "db"
+    PROBE_PORT: "3306"
+
+db:
   image: mysql:5.6
   hostname: db
   expose:
     - "3306"
   environment:
-      MYSQL_ROOT_PASSWORD: password
+    MYSQL_ROOT_PASSWORD: password
 
 cache:
   build: ../../
