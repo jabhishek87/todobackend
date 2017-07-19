@@ -1,6 +1,12 @@
 # DevOps Learning Initiative #DevOpsInitiative
 This project is a part of devops learning initiave to get all related project
 search #devOpsInitiative
+
+> some good links to read
+### a. https://caremad.io/posts/2013/07/setup-vs-requirement/
+### b. https://hynek.me/articles/virtualenv-lives/
+### c. http://python.org/dev/peps/pep-0427
+
 1.  Test
 2.  Build
 3.  Release
