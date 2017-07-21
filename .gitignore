@@ -90,3 +90,7 @@ ENV/
 .idea/
 db.sqlite3
 unittests.xml
+
+# Ignore build and test artifacts
+target
+reports
